@@ -59,14 +59,15 @@ struct FloatingFooterMenu: View {
                         }
                     }
                     .foregroundColor(.black)
-                )
+                ),
+                destination: AnyView(ExploreView().navigationBarHidden(true))
             )
             Spacer()
             Spacer()
-            FooterMenuItem(iconName: "magnifyingglass", title: "Search")
+            FooterMenuItem(iconName: "magnifyingglass", title: "Search", destination: AnyView(SearchView().navigationBarHidden(true)))
             Spacer()
             Spacer()
-            FooterMenuItem(iconName: "bookmark", title: "Saved")
+            FooterMenuItem(iconName: "bookmark", title: "Saved", destination: AnyView(SavedCardView().navigationBarHidden(true)))
             Spacer()
         }
         .padding(.vertical, 10)
@@ -81,42 +82,32 @@ struct FooterMenuItem: View {
     let iconName: String?
     let title: String
     let customIcon: AnyView?
+    let destination: AnyView
 
-    init(iconName: String? = nil, title: String, customIcon: AnyView? = nil) {
+    init(iconName: String? = nil, title: String, customIcon: AnyView? = nil, destination: AnyView) {
         self.iconName = iconName
         self.title = title
         self.customIcon = customIcon
+        self.destination = destination
     }
 
     var body: some View {
-        VStack(spacing: 4) {
-            if let customIcon = customIcon {
-                customIcon
-            } else if let iconName = iconName {
-                Image(systemName: iconName)
-                    .font(.system(size: 20))
+        NavigationLink(destination: destination) {
+            VStack(spacing: 4) {
+                if let customIcon = customIcon {
+                    customIcon
+                } else if let iconName = iconName {
+                    Image(systemName: iconName)
+                        .font(.system(size: 20))
+                        .foregroundColor(.black)
+                }
+                Text(title)
+                    .font(.custom("GTWalsheimTrial-Bd", size: 12))
                     .foregroundColor(.black)
             }
-            Text(title)
-                .font(.custom("GTWalsheimTrial-Bd", size: 12))
-                .foregroundColor(.black)
         }
     }
 }
-
-//struct CardView: View {
-//    var body: some View {
-//        VStack {
-//            Text("Card Content")
-//                .font(.custom("GTWalsheimTrial-Bd", size: 20))
-//                .padding()
-//        }
-//        .frame(width: 200, height: 300) // Example size, adjust as needed
-//        .background(Color.blue)
-//        .cornerRadius(10)
-//        .shadow(radius: 5)
-//    }
-//}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -28,7 +28,7 @@ struct ButtonView<Destination: View>: View {
                     .colorInvert()
             }
         }
-        .buttonStyle(PlainButtonStyle()) // This removes the default NavigationLink styling
+        .buttonStyle(PlainButtonStyle())
     }
 }
 
