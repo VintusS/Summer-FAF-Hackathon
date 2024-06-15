@@ -15,7 +15,7 @@ struct CardView: View {
             HStack {
                 VStack {
                     HStack {
-                        ImageView(imageUrl: card.imageUrl, width: 30, height: 25)
+                        ImageView(imageUrl: card.logoUrl, width: 30, height: 25)
                         Text(card.modelName)
                             .font(.custom("GTWalsheimTrial-Bd", size: 18))
                         Spacer()
@@ -35,7 +35,7 @@ struct CardView: View {
                             buttonName: "See Details",
                             fontSize: 16,
                             destination: CardDetailView(
-                                carLogo: ImageView(imageUrl: card.imageUrl, width: 30, height: 25),
+                                carLogo: ImageView(imageUrl: card.logoUrl, width: 30, height: 25),
                                 modelName: card.modelName,
                                 description: card.details,
                                 numberOfSeats: 2,
@@ -54,8 +54,8 @@ struct CardView: View {
             }
             HStack {
                 Spacer()
-                Image("Mazda1")
-                    .frame(width: 170, height: 70)
+//                ImageView(imageUrl: card.imageName, width: 170, height: 70)
+                Image(card.imageName)
             }
         }
         .padding()
@@ -68,8 +68,9 @@ struct CardView: View {
 
 #Preview {
     CardView(card: Card(
-        id: UUID(),
-        imageUrl: "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png",
+        id: "1",
+        logoUrl: "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png",
+        imageName: "Mazda1",
         modelName: "Mazda MX-5",
         price: "40,000",
         details: """
@@ -77,4 +78,3 @@ The Mazda MX-5 is a lightweight two-passenger roadster manufactured and marketed
 """
     ))
 }
-

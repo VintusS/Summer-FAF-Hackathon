@@ -8,25 +8,19 @@
 import SwiftUI
 
 struct ExploreView: View {
+    let cars = loadCars()
+
     var body: some View {
         NavigationView {
             ZStack {
-                // Your main content
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
                         Text("Suggested Cars")
                             .font(.custom("GTWalsheimTrial-Md", size: 30))
-                        // Example content
-                        ForEach(0..<20) { i in
-                            CardView(card: Card(
-                                id: UUID(),
-                                imageUrl: "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png",
-                                modelName: "Mazda MX-5",
-                                price: "40,000",
-                                details: """
-                        The Mazda MX-5 is a lightweight two-passenger roadster manufactured and marketed by Mazda with a front mid-engine, rear-wheel-drive layout. Manufactured at Mazda's Hiroshima plant, the MX-5 debuted in 1989 at the Chicago Auto Show and has been considered by many as one of the best driving cars ever made. Known for its fun-to-drive character, precise steering, and balanced handling, the MX-5 continues to be a popular choice for driving enthusiasts. The latest generation features a sleek design, advanced technology, and improved performance, making it a perfect choice for those seeking an exhilarating driving experience.
-                        """
-                            ))
+                        Text("Latest Recommendations")
+                            .font(.custom("GTWalsheimTrial-Lt", size: 15))
+                        ForEach(cars) { car in
+                            CardView(card: car)
                         }
                     }
                     .padding(.top, 20)

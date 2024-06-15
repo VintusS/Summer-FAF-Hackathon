@@ -15,6 +15,10 @@
 		71845BD62C1E196500C5246D /* ExpandableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71845BD52C1E196500C5246D /* ExpandableText.swift */; };
 		71A556A22C1E45B0002C8D0B /* SavedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556A12C1E45B0002C8D0B /* SavedCardView.swift */; };
 		71A556A42C1E4610002C8D0B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556A32C1E4610002C8D0B /* SearchView.swift */; };
+		71A556A82C1E4DA3002C8D0B /* CardStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556A72C1E4DA3002C8D0B /* CardStruct.swift */; };
+		71A556A92C1E4E6B002C8D0B /* cardDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 71A556A62C1E4D70002C8D0B /* cardDetails.json */; };
+		71A556AA2C1E4E6E002C8D0B /* savedCards.json in Resources */ = {isa = PBXBuildFile; fileRef = 71A556A52C1E4816002C8D0B /* savedCards.json */; };
+		71A556AB2C1E4E82002C8D0B /* Survey.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ADB2C1DF600003F061A /* Survey.json */; };
 		71E16ABB2C1DBAA7003F061A /* GT-Walsheim-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */; };
 		71E16ABF2C1DBAE2003F061A /* GT-Walsheim-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */; };
 		71E16AC22C1DBF58003F061A /* GT-Walsheim-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16AC12C1DBF58003F061A /* GT-Walsheim-Bold.otf */; };
@@ -40,6 +44,8 @@
 		71A556A12C1E45B0002C8D0B /* SavedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCardView.swift; sourceTree = "<group>"; };
 		71A556A32C1E4610002C8D0B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		71A556A52C1E4816002C8D0B /* savedCards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = savedCards.json; sourceTree = "<group>"; };
+		71A556A62C1E4D70002C8D0B /* cardDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cardDetails.json; sourceTree = "<group>"; };
+		71A556A72C1E4DA3002C8D0B /* CardStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStruct.swift; sourceTree = "<group>"; };
 		71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.otf"; sourceTree = "<group>"; };
 		71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Regular.otf"; sourceTree = "<group>"; };
 		71E16AC02C1DBB56003F061A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -164,6 +170,8 @@
 				71E16AC32C1DC002003F061A /* CardView.swift */,
 				71845BD22C1E0CCC00C5246D /* CardDetailView.swift */,
 				71A556A52C1E4816002C8D0B /* savedCards.json */,
+				71A556A62C1E4D70002C8D0B /* cardDetails.json */,
+				71A556A72C1E4DA3002C8D0B /* CardStruct.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -246,9 +254,12 @@
 				711A1A482C1D93D3002B0AD3 /* Preview Assets.xcassets in Resources */,
 				71E16AD52C1DE1F5003F061A /* GT-Walsheim-Light.otf in Resources */,
 				71E16ABF2C1DBAE2003F061A /* GT-Walsheim-Regular.otf in Resources */,
+				71A556A92C1E4E6B002C8D0B /* cardDetails.json in Resources */,
 				71E16AC22C1DBF58003F061A /* GT-Walsheim-Bold.otf in Resources */,
 				71E16ABB2C1DBAA7003F061A /* GT-Walsheim-Medium.otf in Resources */,
+				71A556AB2C1E4E82002C8D0B /* Survey.json in Resources */,
 				711A1A452C1D93D3002B0AD3 /* Assets.xcassets in Resources */,
+				71A556AA2C1E4E6E002C8D0B /* savedCards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71E16ACA2C1DCAD2003F061A /* ImageView.swift in Sources */,
+				71A556A82C1E4DA3002C8D0B /* CardStruct.swift in Sources */,
 				71E16AD72C1DEB7C003F061A /* ReusableSurveyView.swift in Sources */,
 				71A556A22C1E45B0002C8D0B /* SavedCardView.swift in Sources */,
 				711A1A432C1D93D2002B0AD3 /* ContentView.swift in Sources */,

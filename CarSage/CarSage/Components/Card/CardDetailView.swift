@@ -196,9 +196,10 @@ The Mazda MX-5 is a lightweight two-passenger roadster manufactured and marketed
             horsePower: 181,
             numberOfSpeeds: 6,
             baggageVolume: 130,
-            card: Card( // Add the Card object here for preview
-                id: UUID(),
-                imageUrl: "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png",
+            card: Card(
+                id: "1",
+                logoUrl: "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png",
+                imageName: "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png",
                 modelName: "Mazda MX-5",
                 price: "40,000",
                 details: """

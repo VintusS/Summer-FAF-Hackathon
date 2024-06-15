@@ -59,11 +59,4 @@ struct LikeButtonView: View {
     }
 }
 
-struct Card: Identifiable, Codable {
-    let id: UUID
-    let imageUrl: String
-    let modelName: String
-    let price: String
-    let details: String
-}
 
