@@ -22,6 +22,13 @@ struct StartingPageView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
+                    // App name
+                    HStack {
+                        Text("CarSage")
+                            .font(.custom("GTWalsheimTrial-Lt", size: 29))
+                            .foregroundColor(.white)
+                            .padding(.top, 50)
+                    }
                     Spacer()
                     
                     // Title text
