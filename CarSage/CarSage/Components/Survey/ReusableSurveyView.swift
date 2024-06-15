@@ -95,7 +95,7 @@ struct SurveyView_Previews: PreviewProvider {
             question: "What are your favorite colors?",
             answers: ["Red", "Blue", "Green", "Yellow"],
             multipleChoice: true,
-            isLast: true
+            isLast: false
         )
     }
 }

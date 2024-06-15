@@ -9,12 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Here")
-                .font(.custom("GTWalsheimTrial-Bd", size: 20))
-            Text("Haha")
-                .font(.custom("GTWalsheimTrial-Rg", size: 16))
-        }
+        ExploreView()
     }
     init () {
         for familyName in UIFont.familyNames {

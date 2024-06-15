@@ -22,6 +22,7 @@
 		71E16AD22C1DDDAE003F061A /* StartingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16AD12C1DDDAE003F061A /* StartingPageView.swift */; };
 		71E16AD52C1DE1F5003F061A /* GT-Walsheim-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16AD42C1DE1F5003F061A /* GT-Walsheim-Light.otf */; };
 		71E16AD72C1DEB7C003F061A /* ReusableSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16AD62C1DEB7C003F061A /* ReusableSurveyView.swift */; };
+		71E16AD92C1DF519003F061A /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16AD82C1DF519003F061A /* ExploreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		71E16AD12C1DDDAE003F061A /* StartingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingPageView.swift; sourceTree = "<group>"; };
 		71E16AD42C1DE1F5003F061A /* GT-Walsheim-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Light.otf"; sourceTree = "<group>"; };
 		71E16AD62C1DEB7C003F061A /* ReusableSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableSurveyView.swift; sourceTree = "<group>"; };
+		71E16AD82C1DF519003F061A /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		71E16ADB2C1DF600003F061A /* Survey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Survey.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 		71E16AC82C1DCAC4003F061A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				71E16ADA2C1DF520003F061A /* Menus */,
 				71E16AD02C1DDD65003F061A /* Card */,
 				71E16ACF2C1DDD57003F061A /* Survey */,
 				71E16AC92C1DCAD2003F061A /* ImageView.swift */,
@@ -130,6 +134,7 @@
 			children = (
 				71E16AD12C1DDDAE003F061A /* StartingPageView.swift */,
 				71E16AD62C1DEB7C003F061A /* ReusableSurveyView.swift */,
+				71E16ADB2C1DF600003F061A /* Survey.json */,
 			);
 			path = Survey;
 			sourceTree = "<group>";
@@ -148,6 +153,14 @@
 			children = (
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		71E16ADA2C1DF520003F061A /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				71E16AD82C1DF519003F061A /* ExploreView.swift */,
+			);
+			path = Menus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +241,7 @@
 				71E16AD72C1DEB7C003F061A /* ReusableSurveyView.swift in Sources */,
 				711A1A432C1D93D2002B0AD3 /* ContentView.swift in Sources */,
 				71E16ACE2C1DD74C003F061A /* LikeButtonView.swift in Sources */,
+				71E16AD92C1DF519003F061A /* ExploreView.swift in Sources */,
 				71E16ACC2C1DCD35003F061A /* ButtonView.swift in Sources */,
 				71E16AD22C1DDDAE003F061A /* StartingPageView.swift in Sources */,
 				71E16AC42C1DC002003F061A /* CardView.swift in Sources */,

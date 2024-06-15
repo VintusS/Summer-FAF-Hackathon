@@ -24,7 +24,7 @@ struct StartingPageView: View {
                 // Title text
                 HStack {
                     Text("Enjoy a new experience.")
-                        .font(.custom("GTWalsheimTrial-Bd", size: 24))
+                        .font(.custom("GTWalsheimTrial-Rg", size: 29))
                         .foregroundColor(.white)
                         .padding(.horizontal)
                     Spacer()
@@ -32,20 +32,21 @@ struct StartingPageView: View {
                 .padding(.horizontal)
                 HStack {
                     Text("Search for a new car, buy it, and enjoy the ride.")
-                        .font(.custom("GTWalsheimTrial-Rg", size: 20))
+                        .font(.custom("GTWalsheimTrial-Lt", size: 20))
                         .foregroundColor(.white)
                         .padding(.horizontal)
                         .padding(.bottom)
                     Spacer()
                 }
                 .padding()
+                .padding(.bottom, 10)
                 
                 // Button
                 Button(action: {
                     // Action for button press
                 }) {
                     Text("Let's Start")
-                        .font(.custom("GTWalsheimTrial-Bd", size: 20))
+                        .font(.custom("GTWalsheimTrial-Rg", size: 24))
                         .foregroundColor(.black)
                         .padding()
                         .frame(maxWidth: .infinity)
