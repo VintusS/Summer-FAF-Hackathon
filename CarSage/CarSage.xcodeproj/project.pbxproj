@@ -15,6 +15,9 @@
 		71E16ABF2C1DBAE2003F061A /* GT-Walsheim-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */; };
 		71E16AC22C1DBF58003F061A /* GT-Walsheim-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16AC12C1DBF58003F061A /* GT-Walsheim-Bold.otf */; };
 		71E16AC42C1DC002003F061A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16AC32C1DC002003F061A /* CardView.swift */; };
+		71E16AC72C1DC7AC003F061A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16AC62C1DC7AC003F061A /* ColorExtension.swift */; };
+		71E16ACA2C1DCAD2003F061A /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16AC92C1DCAD2003F061A /* ImageView.swift */; };
+		71E16ACC2C1DCD35003F061A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16ACB2C1DCD35003F061A /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		71E16AC02C1DBB56003F061A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		71E16AC12C1DBF58003F061A /* GT-Walsheim-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Bold.otf"; sourceTree = "<group>"; };
 		71E16AC32C1DC002003F061A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		71E16AC62C1DC7AC003F061A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		71E16AC92C1DCAD2003F061A /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		71E16ACB2C1DCD35003F061A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +70,8 @@
 				71E16AB92C1DBA68003F061A /* Font */,
 				711A1A402C1D93D2002B0AD3 /* CarSageApp.swift */,
 				711A1A422C1D93D2002B0AD3 /* ContentView.swift */,
-				71E16AC32C1DC002003F061A /* CardView.swift */,
+				71E16AC82C1DCAC4003F061A /* Components */,
+				71E16AC52C1DC78F003F061A /* Extension */,
 				711A1A442C1D93D3002B0AD3 /* Assets.xcassets */,
 				711A1A462C1D93D3002B0AD3 /* Preview Content */,
 			);
@@ -87,6 +94,24 @@
 				71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		71E16AC52C1DC78F003F061A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				71E16AC62C1DC7AC003F061A /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		71E16AC82C1DCAC4003F061A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				71E16AC92C1DCAD2003F061A /* ImageView.swift */,
+				71E16ACB2C1DCD35003F061A /* ButtonView.swift */,
+				71E16AC32C1DC002003F061A /* CardView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E16ACA2C1DCAD2003F061A /* ImageView.swift in Sources */,
 				711A1A432C1D93D2002B0AD3 /* ContentView.swift in Sources */,
+				71E16ACC2C1DCD35003F061A /* ButtonView.swift in Sources */,
 				71E16AC42C1DC002003F061A /* CardView.swift in Sources */,
 				711A1A412C1D93D2002B0AD3 /* CarSageApp.swift in Sources */,
+				71E16AC72C1DC7AC003F061A /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        CardView()
-            .padding()
+        VStack {
+            Text("Here")
+                .font(.custom("GTWalsheimTrial-Bd", size: 20))
+            Text("Haha")
+                .font(.custom("GTWalsheimTrial-Rg", size: 16))
+        }
     }
     init () {
         for familyName in UIFont.familyNames {
