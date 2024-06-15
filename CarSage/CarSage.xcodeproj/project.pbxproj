@@ -39,6 +39,7 @@
 		71845BD52C1E196500C5246D /* ExpandableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableText.swift; sourceTree = "<group>"; };
 		71A556A12C1E45B0002C8D0B /* SavedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCardView.swift; sourceTree = "<group>"; };
 		71A556A32C1E4610002C8D0B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		71A556A52C1E4816002C8D0B /* savedCards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = savedCards.json; sourceTree = "<group>"; };
 		71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.otf"; sourceTree = "<group>"; };
 		71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Regular.otf"; sourceTree = "<group>"; };
 		71E16AC02C1DBB56003F061A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -162,6 +163,7 @@
 				71E16ACD2C1DD74C003F061A /* LikeButtonView.swift */,
 				71E16AC32C1DC002003F061A /* CardView.swift */,
 				71845BD22C1E0CCC00C5246D /* CardDetailView.swift */,
+				71A556A52C1E4816002C8D0B /* savedCards.json */,
 			);
 			path = Card;
 			sourceTree = "<group>";

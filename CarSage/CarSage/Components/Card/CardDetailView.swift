@@ -16,6 +16,7 @@ struct CardDetailView<LogoView: View>: View {
     let horsePower: Int
     let numberOfSpeeds: Int
     let baggageVolume: Int
+    let card: Card // Add the Card object
 
     @State private var currentImageIndex: Int = 0
     @State private var isExpanded: Bool = false
@@ -70,7 +71,7 @@ struct CardDetailView<LogoView: View>: View {
                         .font(.title)
                         .fontWeight(.bold)
                     Spacer()
-                    LikeButtonView(width: 30, height: 30)
+                    LikeButtonView(width: 30, height: 30, card: card) // Pass the card object here
                 }
                 .padding([.horizontal, .top])
                 .padding(.trailing, 10)
@@ -133,7 +134,6 @@ struct CardDetailView<LogoView: View>: View {
                 
             }
             
-            
             Spacer()
             
             HStack {
@@ -171,6 +171,7 @@ struct CardDetailView<LogoView: View>: View {
             NavigationLink(destination: ExploreView().navigationBarHidden(true), isActive: $navigateToExplore) { EmptyView() } // NavigationLink to ExploreView
         )
     }
+    
     private func callPhoneNumber(phoneNumber: String) {
         if let phoneCallURL = URL(string: "tel://\(phoneNumber)") {
             if UIApplication.shared.canOpenURL(phoneCallURL) {
@@ -194,7 +195,16 @@ The Mazda MX-5 is a lightweight two-passenger roadster manufactured and marketed
             numberOfDoors: 2,
             horsePower: 181,
             numberOfSpeeds: 6,
-            baggageVolume: 130
+            baggageVolume: 130,
+            card: Card( // Add the Card object here for preview
+                id: UUID(),
+                imageUrl: "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png",
+                modelName: "Mazda MX-5",
+                price: "40,000",
+                details: """
+The Mazda MX-5 is a lightweight two-passenger roadster manufactured and marketed by Mazda with a front mid-engine, rear-wheel-drive layout. Manufactured at Mazda's Hiroshima plant, the MX-5 debuted in 1989 at the Chicago Auto Show and has been considered by many as one of the best driving cars ever made. Known for its fun-to-drive character, precise steering, and balanced handling, the MX-5 continues to be a popular choice for driving enthusiasts. The latest generation features a sleek design, advanced technology, and improved performance, making it a perfect choice for those seeking an exhilarating driving experience.
+"""
+            )
         )
     }
 }
