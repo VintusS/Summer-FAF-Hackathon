@@ -19,15 +19,14 @@ struct ExploreView: View {
                     }
                 }
                 .padding(.top, 20)
+                .padding(.horizontal, 30) // Remove this padding if it affects the layout
             }
             .background(Color(hex: "#f3f3f3"))
             
             VStack {
                 Spacer()
-                HStack {
-                    FloatingFooterMenu()
-                }
-                .padding(.horizontal, 30)
+                FloatingFooterMenu()
+                    .padding(.horizontal, 30) // Add padding here if needed
             }
         }
         .background(Color(hex: "#f3f3f3"))
@@ -37,6 +36,7 @@ struct ExploreView: View {
 struct FloatingFooterMenu: View {
     var body: some View {
         HStack {
+            Spacer()
             FooterMenuItem(
                 title: "Explore",
                 customIcon: AnyView(
@@ -58,12 +58,14 @@ struct FloatingFooterMenu: View {
                 )
             )
             Spacer()
+            Spacer()
             FooterMenuItem(iconName: "magnifyingglass", title: "Search")
             Spacer()
+            Spacer()
             FooterMenuItem(iconName: "bookmark", title: "Saved")
+            Spacer()
         }
         .padding(.vertical, 10)
-        .padding(.horizontal, 30)
         .background(Color.white)
         .cornerRadius(15)
         .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)
@@ -97,6 +99,20 @@ struct FooterMenuItem: View {
         }
     }
 }
+
+//struct CardView: View {
+//    var body: some View {
+//        VStack {
+//            Text("Card Content")
+//                .font(.custom("GTWalsheimTrial-Bd", size: 20))
+//                .padding()
+//        }
+//        .frame(width: 200, height: 300) // Example size, adjust as needed
+//        .background(Color.blue)
+//        .cornerRadius(10)
+//        .shadow(radius: 5)
+//    }
+//}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
