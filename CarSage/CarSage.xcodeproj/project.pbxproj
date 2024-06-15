@@ -11,6 +11,10 @@
 		711A1A432C1D93D2002B0AD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A1A422C1D93D2002B0AD3 /* ContentView.swift */; };
 		711A1A452C1D93D3002B0AD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711A1A442C1D93D3002B0AD3 /* Assets.xcassets */; };
 		711A1A482C1D93D3002B0AD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711A1A472C1D93D3002B0AD3 /* Preview Assets.xcassets */; };
+		71E16ABB2C1DBAA7003F061A /* GT-Walsheim-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */; };
+		71E16ABF2C1DBAE2003F061A /* GT-Walsheim-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */; };
+		71E16AC22C1DBF58003F061A /* GT-Walsheim-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16AC12C1DBF58003F061A /* GT-Walsheim-Bold.otf */; };
+		71E16AC42C1DC002003F061A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16AC32C1DC002003F061A /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		711A1A422C1D93D2002B0AD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		711A1A442C1D93D3002B0AD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		711A1A472C1D93D3002B0AD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.otf"; sourceTree = "<group>"; };
+		71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Regular.otf"; sourceTree = "<group>"; };
+		71E16AC02C1DBB56003F061A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		71E16AC12C1DBF58003F061A /* GT-Walsheim-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Bold.otf"; sourceTree = "<group>"; };
+		71E16AC32C1DC002003F061A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,11 @@
 		711A1A3F2C1D93D2002B0AD3 /* CarSage */ = {
 			isa = PBXGroup;
 			children = (
+				71E16AC02C1DBB56003F061A /* Info.plist */,
+				71E16AB92C1DBA68003F061A /* Font */,
 				711A1A402C1D93D2002B0AD3 /* CarSageApp.swift */,
 				711A1A422C1D93D2002B0AD3 /* ContentView.swift */,
+				71E16AC32C1DC002003F061A /* CardView.swift */,
 				711A1A442C1D93D3002B0AD3 /* Assets.xcassets */,
 				711A1A462C1D93D3002B0AD3 /* Preview Content */,
 			);
@@ -65,6 +77,16 @@
 				711A1A472C1D93D3002B0AD3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		71E16AB92C1DBA68003F061A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				71E16AC12C1DBF58003F061A /* GT-Walsheim-Bold.otf */,
+				71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */,
+				71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				711A1A482C1D93D3002B0AD3 /* Preview Assets.xcassets in Resources */,
+				71E16ABF2C1DBAE2003F061A /* GT-Walsheim-Regular.otf in Resources */,
+				71E16AC22C1DBF58003F061A /* GT-Walsheim-Bold.otf in Resources */,
+				71E16ABB2C1DBAA7003F061A /* GT-Walsheim-Medium.otf in Resources */,
 				711A1A452C1D93D3002B0AD3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				711A1A432C1D93D2002B0AD3 /* ContentView.swift in Sources */,
+				71E16AC42C1DC002003F061A /* CardView.swift in Sources */,
 				711A1A412C1D93D2002B0AD3 /* CarSageApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +301,7 @@
 				DEVELOPMENT_TEAM = K9YT824399;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarSage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +331,7 @@
 				DEVELOPMENT_TEAM = K9YT824399;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarSage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
