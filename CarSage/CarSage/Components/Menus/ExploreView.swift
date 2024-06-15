@@ -13,20 +13,22 @@ struct ExploreView: View {
             // Your main content
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
+                    Text("Suggested Cars")
+                        .font(.custom("GTWalsheimTrial-Md", size: 30))
                     // Example content
                     ForEach(0..<20) { i in
                         CardView()
                     }
                 }
                 .padding(.top, 20)
-                .padding(.horizontal, 30) // Remove this padding if it affects the layout
+                .padding(.horizontal, 30)
             }
             .background(Color(hex: "#f3f3f3"))
             
             VStack {
                 Spacer()
                 FloatingFooterMenu()
-                    .padding(.horizontal, 30) // Add padding here if needed
+                    .padding(.horizontal, 30)
             }
         }
         .background(Color(hex: "#f3f3f3"))
