@@ -27,7 +27,9 @@ struct CardView: View {
                     }
                     Spacer()
                     HStack {
-                        ButtonView(width: 100, height: 40, buttonName: "See Details", fontSize: 16)
+                        ButtonView(width: 100, height: 36, buttonName: "See Details", fontSize: 16)
+                            .padding(.trailing, 8)
+                        LikeButtonView(width: 25, height: 25)
                         Spacer()
                     }
                     
