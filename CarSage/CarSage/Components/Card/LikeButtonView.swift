@@ -25,9 +25,7 @@ struct LikeButtonView: View {
     }
 }
 
-struct LikeButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        LikeButtonView(width: 50, height: 50)
-    }
+#Preview {
+    LikeButtonView(width: 50, height: 50)
 }
 

@@ -37,7 +37,7 @@ struct CardView: View {
             }
             HStack {
                 Spacer()
-                ImageView(imageUrl: "https://mazda-brochures.com/main/mazdamx5/2024/1/en-gb/assets/images/mazda-mx5-exclusive-line-rf-1.jpg", width: 150, height: 100)
+                ImageView(imageUrl: "https://mazda-brochures.com/main/mazdamx5/2024/1/en-gb/assets/images/mazda-mx5-exclusive-line-rf-1.jpg", width: 170, height:70)
             }
         }
         .padding()

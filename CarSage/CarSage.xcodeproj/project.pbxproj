@@ -19,6 +19,9 @@
 		71E16ACA2C1DCAD2003F061A /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16AC92C1DCAD2003F061A /* ImageView.swift */; };
 		71E16ACC2C1DCD35003F061A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16ACB2C1DCD35003F061A /* ButtonView.swift */; };
 		71E16ACE2C1DD74C003F061A /* LikeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16ACD2C1DD74C003F061A /* LikeButtonView.swift */; };
+		71E16AD22C1DDDAE003F061A /* StartingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16AD12C1DDDAE003F061A /* StartingPageView.swift */; };
+		71E16AD52C1DE1F5003F061A /* GT-Walsheim-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16AD42C1DE1F5003F061A /* GT-Walsheim-Light.otf */; };
+		71E16AD72C1DEB7C003F061A /* ReusableSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E16AD62C1DEB7C003F061A /* ReusableSurveyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		71E16AC92C1DCAD2003F061A /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		71E16ACB2C1DCD35003F061A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		71E16ACD2C1DD74C003F061A /* LikeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonView.swift; sourceTree = "<group>"; };
+		71E16AD12C1DDDAE003F061A /* StartingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingPageView.swift; sourceTree = "<group>"; };
+		71E16AD42C1DE1F5003F061A /* GT-Walsheim-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Light.otf"; sourceTree = "<group>"; };
+		71E16AD62C1DEB7C003F061A /* ReusableSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableSurveyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 				711A1A422C1D93D2002B0AD3 /* ContentView.swift */,
 				71E16AC82C1DCAC4003F061A /* Components */,
 				71E16AC52C1DC78F003F061A /* Extension */,
+				71E16AD32C1DDF8D003F061A /* Assets */,
 				711A1A442C1D93D3002B0AD3 /* Assets.xcassets */,
 				711A1A462C1D93D3002B0AD3 /* Preview Content */,
 			);
@@ -94,6 +101,7 @@
 				71E16AC12C1DBF58003F061A /* GT-Walsheim-Bold.otf */,
 				71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */,
 				71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */,
+				71E16AD42C1DE1F5003F061A /* GT-Walsheim-Light.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -109,12 +117,37 @@
 		71E16AC82C1DCAC4003F061A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				71E16AD02C1DDD65003F061A /* Card */,
+				71E16ACF2C1DDD57003F061A /* Survey */,
 				71E16AC92C1DCAD2003F061A /* ImageView.swift */,
 				71E16ACB2C1DCD35003F061A /* ButtonView.swift */,
-				71E16AC32C1DC002003F061A /* CardView.swift */,
-				71E16ACD2C1DD74C003F061A /* LikeButtonView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		71E16ACF2C1DDD57003F061A /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				71E16AD12C1DDDAE003F061A /* StartingPageView.swift */,
+				71E16AD62C1DEB7C003F061A /* ReusableSurveyView.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		71E16AD02C1DDD65003F061A /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				71E16ACD2C1DD74C003F061A /* LikeButtonView.swift */,
+				71E16AC32C1DC002003F061A /* CardView.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		71E16AD32C1DDF8D003F061A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				711A1A482C1D93D3002B0AD3 /* Preview Assets.xcassets in Resources */,
+				71E16AD52C1DE1F5003F061A /* GT-Walsheim-Light.otf in Resources */,
 				71E16ABF2C1DBAE2003F061A /* GT-Walsheim-Regular.otf in Resources */,
 				71E16AC22C1DBF58003F061A /* GT-Walsheim-Bold.otf in Resources */,
 				71E16ABB2C1DBAA7003F061A /* GT-Walsheim-Medium.otf in Resources */,
@@ -191,9 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				71E16ACA2C1DCAD2003F061A /* ImageView.swift in Sources */,
+				71E16AD72C1DEB7C003F061A /* ReusableSurveyView.swift in Sources */,
 				711A1A432C1D93D2002B0AD3 /* ContentView.swift in Sources */,
 				71E16ACE2C1DD74C003F061A /* LikeButtonView.swift in Sources */,
 				71E16ACC2C1DCD35003F061A /* ButtonView.swift in Sources */,
+				71E16AD22C1DDDAE003F061A /* StartingPageView.swift in Sources */,
 				71E16AC42C1DC002003F061A /* CardView.swift in Sources */,
 				711A1A412C1D93D2002B0AD3 /* CarSageApp.swift in Sources */,
 				71E16AC72C1DC7AC003F061A /* ColorExtension.swift in Sources */,

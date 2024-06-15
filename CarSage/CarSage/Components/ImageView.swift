@@ -31,5 +31,5 @@ struct ImageView: View {
 }
 
 #Preview {
-    ImageView(imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEexxhffIxugMJXNaS65xIDGY8Fu2s-2Sa4Q&s", width: 200, height: 174)
+    ImageView(imageUrl: "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png", width: 210, height: 174)
 }
