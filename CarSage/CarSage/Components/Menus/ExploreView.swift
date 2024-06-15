@@ -9,29 +9,31 @@ import SwiftUI
 
 struct ExploreView: View {
     var body: some View {
-        ZStack {
-            // Your main content
-            ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
-                    Text("Suggested Cars")
-                        .font(.custom("GTWalsheimTrial-Md", size: 30))
-                    // Example content
-                    ForEach(0..<20) { i in
-                        CardView()
+        NavigationView {
+            ZStack {
+                // Your main content
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text("Suggested Cars")
+                            .font(.custom("GTWalsheimTrial-Md", size: 30))
+                        // Example content
+                        ForEach(0..<20) { i in
+                            CardView()
+                        }
                     }
+                    .padding(.top, 20)
+                    .padding(.horizontal, 30)
                 }
-                .padding(.top, 20)
-                .padding(.horizontal, 30)
+                .background(Color(hex: "#f3f3f3"))
+                
+                VStack {
+                    Spacer()
+                    FloatingFooterMenu()
+                        .padding(.horizontal, 30)
+                }
             }
             .background(Color(hex: "#f3f3f3"))
-            
-            VStack {
-                Spacer()
-                FloatingFooterMenu()
-                    .padding(.horizontal, 30)
-            }
         }
-        .background(Color(hex: "#f3f3f3"))
     }
 }
 

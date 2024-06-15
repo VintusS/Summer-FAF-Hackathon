@@ -7,26 +7,33 @@
 
 import SwiftUI
 
-struct ButtonView: View {
+struct ButtonView<Destination: View>: View {
     let width: CGFloat
     let height: CGFloat
     let buttonName: String
     let fontSize: CGFloat
+    let destination: Destination
+    
     var body: some View {
-        ZStack {
-            //backgroung
-            Rectangle()
-                .fill(.black)
-                .frame(width: width, height: height)
-                .cornerRadius(15)
-            //text
-            Text(buttonName)
-                .font(.custom("GTWalsheimTrial-Md", size: fontSize))
-                .colorInvert()
+        NavigationLink(destination: destination.navigationBarHidden(true)) {
+            ZStack {
+                // Background
+                Rectangle()
+                    .fill(Color.black)
+                    .frame(width: width, height: height)
+                    .cornerRadius(15)
+                // Text
+                Text(buttonName)
+                    .font(.custom("GTWalsheimTrial-Md", size: fontSize))
+                    .colorInvert()
+            }
         }
+        .buttonStyle(PlainButtonStyle()) // This removes the default NavigationLink styling
     }
 }
 
 #Preview {
-    ButtonView(width: 150, height: 50, buttonName: "Button", fontSize: 20)
+    NavigationView {
+        ButtonView(width: 150, height: 50, buttonName: "Button", fontSize: 20, destination: Text("Destination View"))
+    }
 }
