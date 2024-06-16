@@ -20,7 +20,7 @@ struct Survey: View {
     var body: some View {
         NavigationView {
             VStack {
-                ScrollView {
+                
                     VStack(alignment: .leading, spacing: 20) {
                         HStack {
                             Button(action: {
@@ -37,6 +37,8 @@ struct Survey: View {
                             }
                         }
                         .padding(.horizontal, 20)
+                        .padding(.top, 50)
+                        ScrollView {
                         
                         Text(question)
                             .font(.custom("GTWalsheimTrial-Bd", size: 20))
@@ -71,6 +73,10 @@ struct Survey: View {
                                 .padding(.horizontal, 20)
                             }
                         }
+                    }
+                    .background(
+                        NavigationLink(destination: ExploreView().navigationBarHidden(true), isActive: $navigateToExplore) { EmptyView() }
+                    )
                         
                         Spacer()
                         
@@ -104,10 +110,7 @@ struct Survey: View {
                     .background(Color(hex: "#f3f3f3"))
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .edgesIgnoringSafeArea(.all)
-                }
-                .background(
-                    NavigationLink(destination: ExploreView().navigationBarHidden(true), isActive: $navigateToExplore) { EmptyView() }
-                )
+                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color(hex: "#f3f3f3"))

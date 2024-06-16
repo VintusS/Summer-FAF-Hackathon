@@ -18,12 +18,12 @@
 		71A556A82C1E4DA3002C8D0B /* CardStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556A72C1E4DA3002C8D0B /* CardStruct.swift */; };
 		71A556A92C1E4E6B002C8D0B /* cardDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 71A556A62C1E4D70002C8D0B /* cardDetails.json */; };
 		71A556AA2C1E4E6E002C8D0B /* savedCards.json in Resources */ = {isa = PBXBuildFile; fileRef = 71A556A52C1E4816002C8D0B /* savedCards.json */; };
-		71A556AB2C1E4E82002C8D0B /* Survey.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ADB2C1DF600003F061A /* Survey.json */; };
 		71A556AD2C1E7C88002C8D0B /* SelectYourBudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556AC2C1E7C88002C8D0B /* SelectYourBudgetView.swift */; };
-		71A556B12C1E8351002C8D0B /* SurveyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556B02C1E8351002C8D0B /* SurveyData.swift */; };
 		71A556B52C1E8758002C8D0B /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556B42C1E8758002C8D0B /* Survey.swift */; };
 		71A556B72C1E88FD002C8D0B /* SurveyFuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556B62C1E88FD002C8D0B /* SurveyFuel.swift */; };
 		71A556B92C1E8927002C8D0B /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556B82C1E8927002C8D0B /* Results.swift */; };
+		71A556BC2C1EC252002C8D0B /* jsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556BB2C1EC252002C8D0B /* jsonLoader.swift */; };
+		71A556BD2C1EC32E002C8D0B /* Results.json in Resources */ = {isa = PBXBuildFile; fileRef = 71A556BA2C1EC207002C8D0B /* Results.json */; };
 		71E16ABB2C1DBAA7003F061A /* GT-Walsheim-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */; };
 		71E16ABF2C1DBAE2003F061A /* GT-Walsheim-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */; };
 		71E16AC22C1DBF58003F061A /* GT-Walsheim-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16AC12C1DBF58003F061A /* GT-Walsheim-Bold.otf */; };
@@ -52,10 +52,11 @@
 		71A556A62C1E4D70002C8D0B /* cardDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cardDetails.json; sourceTree = "<group>"; };
 		71A556A72C1E4DA3002C8D0B /* CardStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStruct.swift; sourceTree = "<group>"; };
 		71A556AC2C1E7C88002C8D0B /* SelectYourBudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectYourBudgetView.swift; sourceTree = "<group>"; };
-		71A556B02C1E8351002C8D0B /* SurveyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyData.swift; sourceTree = "<group>"; };
 		71A556B42C1E8758002C8D0B /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		71A556B62C1E88FD002C8D0B /* SurveyFuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyFuel.swift; sourceTree = "<group>"; };
 		71A556B82C1E8927002C8D0B /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		71A556BA2C1EC207002C8D0B /* Results.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Results.json; sourceTree = "<group>"; };
+		71A556BB2C1EC252002C8D0B /* jsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonLoader.swift; sourceTree = "<group>"; };
 		71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.otf"; sourceTree = "<group>"; };
 		71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Regular.otf"; sourceTree = "<group>"; };
 		71E16AC02C1DBB56003F061A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		71E16AD42C1DE1F5003F061A /* GT-Walsheim-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Light.otf"; sourceTree = "<group>"; };
 		71E16AD62C1DEB7C003F061A /* ReusableSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableSurveyView.swift; sourceTree = "<group>"; };
 		71E16AD82C1DF519003F061A /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
-		71E16ADB2C1DF600003F061A /* Survey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Survey.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,9 +170,7 @@
 				71E16AD62C1DEB7C003F061A /* ReusableSurveyView.swift */,
 				71A556B42C1E8758002C8D0B /* Survey.swift */,
 				71A556B62C1E88FD002C8D0B /* SurveyFuel.swift */,
-				71E16ADB2C1DF600003F061A /* Survey.json */,
 				71A556AC2C1E7C88002C8D0B /* SelectYourBudgetView.swift */,
-				71A556B02C1E8351002C8D0B /* SurveyData.swift */,
 			);
 			path = Survey;
 			sourceTree = "<group>";
@@ -204,6 +202,8 @@
 				71A556A12C1E45B0002C8D0B /* SavedCardView.swift */,
 				71A556A32C1E4610002C8D0B /* SearchView.swift */,
 				71A556B82C1E8927002C8D0B /* Results.swift */,
+				71A556BA2C1EC207002C8D0B /* Results.json */,
+				71A556BB2C1EC252002C8D0B /* jsonLoader.swift */,
 			);
 			path = Menus;
 			sourceTree = "<group>";
@@ -267,12 +267,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				711A1A482C1D93D3002B0AD3 /* Preview Assets.xcassets in Resources */,
+				71A556BD2C1EC32E002C8D0B /* Results.json in Resources */,
 				71E16AD52C1DE1F5003F061A /* GT-Walsheim-Light.otf in Resources */,
 				71E16ABF2C1DBAE2003F061A /* GT-Walsheim-Regular.otf in Resources */,
 				71A556A92C1E4E6B002C8D0B /* cardDetails.json in Resources */,
 				71E16AC22C1DBF58003F061A /* GT-Walsheim-Bold.otf in Resources */,
 				71E16ABB2C1DBAA7003F061A /* GT-Walsheim-Medium.otf in Resources */,
-				71A556AB2C1E4E82002C8D0B /* Survey.json in Resources */,
 				711A1A452C1D93D3002B0AD3 /* Assets.xcassets in Resources */,
 				71A556AA2C1E4E6E002C8D0B /* savedCards.json in Resources */,
 			);
@@ -289,8 +289,8 @@
 				71A556A82C1E4DA3002C8D0B /* CardStruct.swift in Sources */,
 				71E16AD72C1DEB7C003F061A /* ReusableSurveyView.swift in Sources */,
 				71A556A22C1E45B0002C8D0B /* SavedCardView.swift in Sources */,
+				71A556BC2C1EC252002C8D0B /* jsonLoader.swift in Sources */,
 				71A556B72C1E88FD002C8D0B /* SurveyFuel.swift in Sources */,
-				71A556B12C1E8351002C8D0B /* SurveyData.swift in Sources */,
 				711A1A432C1D93D2002B0AD3 /* ContentView.swift in Sources */,
 				71E16ACE2C1DD74C003F061A /* LikeButtonView.swift in Sources */,
 				71E16AD92C1DF519003F061A /* ExploreView.swift in Sources */,

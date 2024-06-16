@@ -9,7 +9,8 @@ import SwiftUI
 
 struct Results: View {
     @State private var isLoading = true
-
+    let cars = loadResults()
+    
     var body: some View {
         ZStack {
             if isLoading {
@@ -21,8 +22,31 @@ struct Results: View {
                         .padding(.top, 10)
                 }
             } else {
-                Text("Hello, World!")
-                    .font(.custom("GTWalsheimTrial-Lt", size: 20))
+                NavigationView {
+                    ZStack {
+                        ScrollView {
+                            VStack(alignment: .leading, spacing: 20) {
+                                Text("Suggested Cars")
+                                    .font(.custom("GTWalsheimTrial-Md", size: 30))
+                                Text("Here's a list of cars picked just for you")
+                                    .font(.custom("GTWalsheimTrial-Lt", size: 15))
+                                ForEach(cars) { car in
+                                    CardView(card: car)
+                                }
+                            }
+                            .padding(.top, 20)
+                            .padding(.horizontal, 30)
+                        }
+                        .background(Color(hex: "#f3f3f3"))
+                        
+                        VStack {
+                            Spacer()
+                            FloatingFooterMenu()
+                                .padding(.horizontal, 30)
+                        }
+                    }
+                    .background(Color(hex: "#f3f3f3"))
+                }
             }
         }
         .onAppear {
@@ -31,7 +55,7 @@ struct Results: View {
     }
 
     func simulateLoading() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             isLoading = false
         }
     }
