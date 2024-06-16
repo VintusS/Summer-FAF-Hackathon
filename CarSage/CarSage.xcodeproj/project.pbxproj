@@ -24,6 +24,9 @@
 		71A556B92C1E8927002C8D0B /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556B82C1E8927002C8D0B /* Results.swift */; };
 		71A556BC2C1EC252002C8D0B /* jsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556BB2C1EC252002C8D0B /* jsonLoader.swift */; };
 		71A556BD2C1EC32E002C8D0B /* Results.json in Resources */ = {isa = PBXBuildFile; fileRef = 71A556BA2C1EC207002C8D0B /* Results.json */; };
+		71A556BF2C1EC5DB002C8D0B /* CardView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556BE2C1EC5DB002C8D0B /* CardView1.swift */; };
+		71A556C32C1EC63C002C8D0B /* ButtonView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556C22C1EC63C002C8D0B /* ButtonView1.swift */; };
+		71A556C52C1EC6B5002C8D0B /* CardDetailView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556C42C1EC6B5002C8D0B /* CardDetailView1.swift */; };
 		71E16ABB2C1DBAA7003F061A /* GT-Walsheim-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */; };
 		71E16ABF2C1DBAE2003F061A /* GT-Walsheim-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */; };
 		71E16AC22C1DBF58003F061A /* GT-Walsheim-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16AC12C1DBF58003F061A /* GT-Walsheim-Bold.otf */; };
@@ -57,6 +60,9 @@
 		71A556B82C1E8927002C8D0B /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		71A556BA2C1EC207002C8D0B /* Results.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Results.json; sourceTree = "<group>"; };
 		71A556BB2C1EC252002C8D0B /* jsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonLoader.swift; sourceTree = "<group>"; };
+		71A556BE2C1EC5DB002C8D0B /* CardView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView1.swift; sourceTree = "<group>"; };
+		71A556C22C1EC63C002C8D0B /* ButtonView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView1.swift; sourceTree = "<group>"; };
+		71A556C42C1EC6B5002C8D0B /* CardDetailView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView1.swift; sourceTree = "<group>"; };
 		71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.otf"; sourceTree = "<group>"; };
 		71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Regular.otf"; sourceTree = "<group>"; };
 		71E16AC02C1DBB56003F061A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 			children = (
 				71E16AC92C1DCAD2003F061A /* ImageView.swift */,
 				71E16ACB2C1DCD35003F061A /* ButtonView.swift */,
+				71A556C22C1EC63C002C8D0B /* ButtonView1.swift */,
 				71845BD52C1E196500C5246D /* ExpandableText.swift */,
 				71E16AD12C1DDDAE003F061A /* StartingPageView.swift */,
 			);
@@ -180,7 +187,9 @@
 			children = (
 				71E16ACD2C1DD74C003F061A /* LikeButtonView.swift */,
 				71E16AC32C1DC002003F061A /* CardView.swift */,
+				71A556BE2C1EC5DB002C8D0B /* CardView1.swift */,
 				71845BD22C1E0CCC00C5246D /* CardDetailView.swift */,
+				71A556C42C1EC6B5002C8D0B /* CardDetailView1.swift */,
 				71A556A52C1E4816002C8D0B /* savedCards.json */,
 				71A556A62C1E4D70002C8D0B /* cardDetails.json */,
 				71A556A72C1E4DA3002C8D0B /* CardStruct.swift */,
@@ -291,11 +300,14 @@
 				71A556A22C1E45B0002C8D0B /* SavedCardView.swift in Sources */,
 				71A556BC2C1EC252002C8D0B /* jsonLoader.swift in Sources */,
 				71A556B72C1E88FD002C8D0B /* SurveyFuel.swift in Sources */,
+				71A556C52C1EC6B5002C8D0B /* CardDetailView1.swift in Sources */,
+				71A556C32C1EC63C002C8D0B /* ButtonView1.swift in Sources */,
 				711A1A432C1D93D2002B0AD3 /* ContentView.swift in Sources */,
 				71E16ACE2C1DD74C003F061A /* LikeButtonView.swift in Sources */,
 				71E16AD92C1DF519003F061A /* ExploreView.swift in Sources */,
 				71E16ACC2C1DCD35003F061A /* ButtonView.swift in Sources */,
 				71A556B52C1E8758002C8D0B /* Survey.swift in Sources */,
+				71A556BF2C1EC5DB002C8D0B /* CardView1.swift in Sources */,
 				71E16AD22C1DDDAE003F061A /* StartingPageView.swift in Sources */,
 				71845BD32C1E0CCC00C5246D /* CardDetailView.swift in Sources */,
 				71A556AD2C1E7C88002C8D0B /* SelectYourBudgetView.swift in Sources */,

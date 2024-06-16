@@ -31,7 +31,7 @@ struct Results: View {
                                 Text("Here's a list of cars picked just for you")
                                     .font(.custom("GTWalsheimTrial-Lt", size: 15))
                                 ForEach(cars) { car in
-                                    CardView(card: car)
+                                    CardView1(card: car)
                                 }
                             }
                             .padding(.top, 20)
