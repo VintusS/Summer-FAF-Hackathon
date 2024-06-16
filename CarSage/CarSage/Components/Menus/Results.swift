@@ -55,7 +55,7 @@ struct Results: View {
     }
 
     func simulateLoading() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             isLoading = false
         }
     }
