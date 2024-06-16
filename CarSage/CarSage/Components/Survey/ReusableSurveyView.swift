@@ -14,6 +14,7 @@ struct SurveyView: View {
     let multipleChoice: Bool
     let isLast: Bool
     @State private var navigateToExplore: Bool = false
+    @State private var navigateToBudget: Bool = false // State variable to control navigation to budget
     @State private var selectedAnswers: [String: Bool] = [:]
 
     var body: some View {
@@ -70,11 +71,11 @@ struct SurveyView: View {
             Spacer()
 
             Button(action: {
-                // Action for next/finish button
                 if isLast {
                     print("Finish button tapped")
+                    // Perform finishing action here
                 } else {
-                    print("Next button tapped")
+                    navigateToBudget = true // Set the state variable to true to trigger navigation
                 }
             }) {
                 Text(isLast ? "End Survey" : "Next")
@@ -92,7 +93,10 @@ struct SurveyView: View {
         .background(Color(hex: "#f3f3f3"))
         .edgesIgnoringSafeArea(.all)
         .background(
-            NavigationLink(destination: ExploreView().navigationBarHidden(true), isActive: $navigateToExplore) { EmptyView() }
+            VStack {
+                NavigationLink(destination: ExploreView().navigationBarHidden(true), isActive: $navigateToExplore) { EmptyView() }
+                NavigationLink(destination: SelectYourBudgetView().navigationBarHidden(true), isActive: $navigateToBudget) { EmptyView() }
+            }
         )
     }
 

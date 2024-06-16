@@ -11,6 +11,8 @@ struct SelectYourBudgetView: View {
     @State private var minPrice = 0
     @State private var maxPrice = 50000
     @State private var paymentOption: PaymentOption = .cash
+    @State private var navigateToExplore: Bool = false
+    @State private var navigateToSurvey: Bool = false // State variable to control navigation to survey
 
     var prices: [Int] {
         Array(stride(from: 0, to: 200000, by: 5000))
@@ -20,7 +22,7 @@ struct SelectYourBudgetView: View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
                 Button(action: {
-                    // Navigate back action
+                    navigateToExplore = true
                 }) {
                     Image(systemName: "arrow.left")
                         .font(.system(size: 25))
@@ -143,6 +145,7 @@ struct SelectYourBudgetView: View {
 
             Button(action: {
                 // Action for next button
+                navigateToSurvey = true
             }) {
                 Text("Next")
                     .font(.custom("GTWalsheimTrial-Bd", size: 20))
@@ -154,6 +157,15 @@ struct SelectYourBudgetView: View {
                     .padding(.horizontal, 40)
             }
             .padding(.bottom, 40)
+
+            NavigationLink(destination: ExploreView().navigationBarHidden(true), isActive: $navigateToExplore) { EmptyView() }
+            NavigationLink(destination: Survey(
+                question: "Which body types would you consider for your new car?",
+                subheading: "Choose as many as you want",
+                answers: ["SUVs", "Hatchbacks", "Saloons", "Coupes", "Estate Cars", "People Carriers", "Sports Cars", "Convertibles"],
+                multipleChoice: true,
+                isLast: false
+            ).navigationBarHidden(true), isActive: $navigateToSurvey) { EmptyView() }
         }
         .padding(.top, 70)
         .background(Color(hex: "#f3f3f3"))
