@@ -10,19 +10,21 @@ import SwiftUI
 struct SearchView: View {
     var body: some View {
         NavigationView {
-            ZStack {
-                ScrollView {
-                    SurveyView(
-                        question: "What are your favorite colors?",
-                        answers: ["Red", "Blue", "Green", "Yellow"],
-                        multipleChoice: true,
-                        isLast: false
-                    )
-                }
-                .background(Color(hex: "#f3f3f3"))
-            }
+            SurveyView(
+                question: "Do you know what you’re looking for?",
+                subheading: "",
+                answers: ["I know the make and model", "I'm not sure what I want"],
+                multipleChoice: false,
+                isLast: false
+            )
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+            .edgesIgnoringSafeArea(.all)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.top)
             .background(Color(hex: "#f3f3f3"))
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

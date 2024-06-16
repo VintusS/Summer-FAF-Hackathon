@@ -19,6 +19,7 @@
 		71A556A92C1E4E6B002C8D0B /* cardDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 71A556A62C1E4D70002C8D0B /* cardDetails.json */; };
 		71A556AA2C1E4E6E002C8D0B /* savedCards.json in Resources */ = {isa = PBXBuildFile; fileRef = 71A556A52C1E4816002C8D0B /* savedCards.json */; };
 		71A556AB2C1E4E82002C8D0B /* Survey.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ADB2C1DF600003F061A /* Survey.json */; };
+		71A556AD2C1E7C88002C8D0B /* SelectYourBudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A556AC2C1E7C88002C8D0B /* SelectYourBudgetView.swift */; };
 		71E16ABB2C1DBAA7003F061A /* GT-Walsheim-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */; };
 		71E16ABF2C1DBAE2003F061A /* GT-Walsheim-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */; };
 		71E16AC22C1DBF58003F061A /* GT-Walsheim-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71E16AC12C1DBF58003F061A /* GT-Walsheim-Bold.otf */; };
@@ -46,6 +47,7 @@
 		71A556A52C1E4816002C8D0B /* savedCards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = savedCards.json; sourceTree = "<group>"; };
 		71A556A62C1E4D70002C8D0B /* cardDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cardDetails.json; sourceTree = "<group>"; };
 		71A556A72C1E4DA3002C8D0B /* CardStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStruct.swift; sourceTree = "<group>"; };
+		71A556AC2C1E7C88002C8D0B /* SelectYourBudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectYourBudgetView.swift; sourceTree = "<group>"; };
 		71E16ABA2C1DBAA7003F061A /* GT-Walsheim-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.otf"; sourceTree = "<group>"; };
 		71E16ABE2C1DBAE2003F061A /* GT-Walsheim-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Regular.otf"; sourceTree = "<group>"; };
 		71E16AC02C1DBB56003F061A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				71E16AC92C1DCAD2003F061A /* ImageView.swift */,
 				71E16ACB2C1DCD35003F061A /* ButtonView.swift */,
 				71845BD52C1E196500C5246D /* ExpandableText.swift */,
+				71E16AD12C1DDDAE003F061A /* StartingPageView.swift */,
 			);
 			path = Random;
 			sourceTree = "<group>";
@@ -156,9 +159,9 @@
 		71E16ACF2C1DDD57003F061A /* Survey */ = {
 			isa = PBXGroup;
 			children = (
-				71E16AD12C1DDDAE003F061A /* StartingPageView.swift */,
 				71E16AD62C1DEB7C003F061A /* ReusableSurveyView.swift */,
 				71E16ADB2C1DF600003F061A /* Survey.json */,
+				71A556AC2C1E7C88002C8D0B /* SelectYourBudgetView.swift */,
 			);
 			path = Survey;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				71E16ACC2C1DCD35003F061A /* ButtonView.swift in Sources */,
 				71E16AD22C1DDDAE003F061A /* StartingPageView.swift in Sources */,
 				71845BD32C1E0CCC00C5246D /* CardDetailView.swift in Sources */,
+				71A556AD2C1E7C88002C8D0B /* SelectYourBudgetView.swift in Sources */,
 				71845BD62C1E196500C5246D /* ExpandableText.swift in Sources */,
 				71A556A42C1E4610002C8D0B /* SearchView.swift in Sources */,
 				71E16AC42C1DC002003F061A /* CardView.swift in Sources */,

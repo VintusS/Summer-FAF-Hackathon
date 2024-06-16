@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SurveyView: View {
     let question: String
+    let subheading: String
     let answers: [String]
     let multipleChoice: Bool
     let isLast: Bool
@@ -35,7 +36,10 @@ struct SurveyView: View {
             Text(question)
                 .font(.custom("GTWalsheimTrial-Bd", size: 20))
                 .foregroundColor(.black)
-                .padding(.bottom, 20)
+                .padding(.horizontal, 20)
+            
+            Text(subheading)
+                .font(.custom("GTWalsheimTrial-Lt", size: 16))
                 .padding(.horizontal, 20)
             
             ForEach(answers, id: \.self) { answer in
@@ -84,7 +88,7 @@ struct SurveyView: View {
             }
             .padding(.bottom, 40)
         }
-        .padding(.top, 70)
+        .frame(maxWidth: .infinity, maxHeight: .infinity) // Ensure it takes full space
         .background(Color(hex: "#f3f3f3"))
         .edgesIgnoringSafeArea(.all)
         .background(
@@ -112,10 +116,11 @@ struct SurveyView_Previews: PreviewProvider {
     static var previews: some View {
         SurveyView(
             question: "What are your favorite colors?",
+            subheading: "Choose your color",
             answers: ["Red", "Blue", "Green", "Yellow"],
             multipleChoice: true,
             isLast: false
         )
+        .padding(.top, 10)
     }
 }
-
