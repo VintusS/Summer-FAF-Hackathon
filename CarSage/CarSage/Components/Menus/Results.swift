@@ -17,7 +17,7 @@ struct Results: View {
                 VStack {
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle())
-                    Text("Searching for a car for you")
+                    Text("Searching for a suitable car")
                         .font(.custom("GTWalsheimTrial-Rg", size: 20))
                         .padding(.top, 10)
                 }

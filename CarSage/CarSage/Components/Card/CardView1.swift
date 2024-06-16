@@ -38,11 +38,11 @@ struct CardView1: View {
                                 carLogo: ImageView(imageUrl: card.logoUrl, width: 30, height: 25),
                                 modelName: card.modelName,
                                 description: card.details,
-                                numberOfSeats: 2,
-                                numberOfDoors: 2,
-                                horsePower: 181,
-                                numberOfSpeeds: 6,
-                                baggageVolume: 130,
+                                numberOfSeats: 5,
+                                numberOfDoors: 4,
+                                horsePower: 121,
+                                numberOfSpeeds: 5,
+                                baggageVolume: 350,
                                 card: card
                             )
                         )
