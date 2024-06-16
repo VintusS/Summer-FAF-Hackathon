@@ -1,0 +1,43 @@
+[
+    {
+        "id": "1",
+        "logoUrl": "https://w7.pngwing.com/pngs/584/35/png-transparent-toyota-corolla-car-toyota-camry-logo-toyota-thumbnail.png",
+        "imageName": "Corolla1",
+        "modelName": "Corolla",
+        "price": "20,000",
+        "details": "The Toyota Corolla is a line of subcompact and compact cars manufactured by Toyota. Introduced in 1966, the Corolla has become one of the best-selling cars worldwide."
+    },
+    {
+        "id": "2",
+        "logoUrl": "https://www.freeiconspng.com/thumbs/honda-logo-png/honda-logo-png-picture-20.png",
+        "imageName": "Civic1",
+        "modelName": "Civic",
+        "price": "22,500",
+        "details": "The Honda Civic is a line of cars manufactured by Honda. First introduced in 1972, it has gone through several generational changes, evolving into a compact car with a reputation for reliability."
+    },
+    {
+        "id": "3",
+        "logoUrl": "https://w7.pngwing.com/pngs/468/848/png-transparent-logo-ford-logo-car-car-standard-pattern-flag-cars.png",
+        "imageName": "Focus1",
+        "modelName": "Focus",
+        "price": "18,000",
+        "details": "The Ford Focus is a compact car manufactured by the Ford Motor Company since 1998. Known for its balanced handling and comprehensive features, it's a popular choice among compact cars."
+    },
+    {
+        "id": "4",
+        "logoUrl": "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png",
+        "imageName": "Series1",
+        "modelName": "Series 3",
+        "price": "23,000",
+        "details": "The Mazda 3, also known as the Mazda Axela in Japan, is a compact car manufactured by Mazda. It offers sporty performance and stylish design, making it a favorite among driving enthusiasts."
+    },
+    {
+        "id": "5",
+        "logoUrl": "https://w7.pngwing.com/pngs/50/648/png-transparent-hyundai-motor-company-logo-hyundai-i10-2017-hyundai-tucson-hyundai-text-trademark-logo.png",
+        "imageName": "Elantra1",
+        "modelName": "Elantra",
+        "price": "19,500",
+        "details": "The Hyundai Elantra is a compact car produced by the South Korean manufacturer Hyundai. Since its introduction in 1990, the Elantra has been known for its value, efficiency, and features."
+    }
+]
+

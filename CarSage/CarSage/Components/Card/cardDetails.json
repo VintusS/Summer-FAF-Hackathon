@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "logoUrl": "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png",
+        "imageName": "Mazda1",
+        "modelName": "Mazda MX-5",
+        "price": "40,000",
+        "details": "The Mazda MX-5 is a lightweight two-passenger roadster manufactured and marketed by Mazda with a front mid-engine, rear-wheel-drive layout. Manufactured at Mazda's Hiroshima plant, the MX-5 debuted in 1989 at the Chicago Auto Show and has been considered by many as one of the best driving cars ever made. Known for its fun-to-drive character, precise steering, and balanced handling, the MX-5 continues to be a popular choice for driving enthusiasts. The latest generation features a sleek design, advanced technology, and improved performance, making it a perfect choice for those seeking an exhilarating driving experience."
+    },
+    {
+        "id": "2",
+        "logoUrl": "https://w7.pngwing.com/pngs/584/35/png-transparent-toyota-corolla-car-toyota-camry-logo-toyota-thumbnail.png",
+        "imageName": "Toyota1",
+        "modelName": "Toyota Supra",
+        "price": "50,000",
+        "details": "The Toyota Supra is a sports car and grand tourer manufactured by Toyota Motor Corporation. The design of the Supra traces much of its roots back to the Toyota 2000GT with the main element being its inline-6 layout."
+    },
+    {
+        "id": "3",
+        "logoUrl": "https://brandslogos.com/wp-content/uploads/images/large/mustang-logo.png",
+        "imageName": "Ford1",
+        "modelName": "Ford Mustang",
+        "price": "55,000",
+        "details": "The Ford Mustang is an American car manufactured by Ford. It was originally conceived by Lee Iacocca. The Mustang created the 'pony car' class of American muscle cars."
+    },
+    {
+        "id": "4",
+        "logoUrl": "https://cdn.freebiesupply.com/logos/large/2x/chevrolet-logo-png-transparent.png",
+        "imageName": "Chevrolet1",
+        "modelName": "Chevrolet Camaro",
+        "price": "45,000",
+        "details": "The Chevrolet Camaro is a mid-size American automobile manufactured by Chevrolet, classified as a pony car and some versions also as a muscle car."
+    },
+    {
+        "id": "5",
+        "logoUrl": "https://i.pinimg.com/736x/e1/d0/e7/e1d0e7b12ea7d906d0016f718fb8585d.jpg",
+        "imageName": "Mazda1",
+        "modelName": "BMW Z4",
+        "price": "60,000",
+        "details": "The BMW Z4 is a rear-wheel drive sports car by the German car maker BMW. It is the third model in the BMW Z Series and the successor to the BMW Z3."
+    },
+    {
+        "id": "6",
+        "logoUrl": "https://e7.pngegg.com/pngimages/665/220/png-clipart-audi-logo-audi-a3-car-emblem-logo-audi-car-logo-brand-text-candle-thumbnail.png",
+        "imageName": "Audi1",
+        "modelName": "Audi TT",
+        "price": "52,000",
+        "details": "The Audi TT is a 2-door sports car marketed by Volkswagen Group subsidiary Audi since 1998. The Audi TT is now in its third generation."
+    },
+    {
+        "id": "7",
+        "logoUrl": "https://pngimg.com/uploads/porsche_logo/porsche_logo_PNG1.png",
+        "imageName": "Porsche1",
+        "modelName": "Porsche 718 Boxster",
+        "price": "70,000",
+        "details": "The Porsche Boxster and Cayman are mid-engine two-seater sports cars built by Porsche. The Boxster, a 2-door, 2-seater roadster was introduced in 1996."
+    },
+    {
+        "id": "8",
+        "logoUrl": "https://w7.pngwing.com/pngs/58/113/png-transparent-nissan-car-logo-nissan-emblem-trademark-desktop-wallpaper.png",
+        "imageName": "Nissan1",
+        "modelName": "Nissan 370Z",
+        "price": "45,000",
+        "details": "The Nissan 370Z is a sports car manufactured by Nissan Motors. It was announced on October 29, 2008 and was first shown at an event in Los Angeles before its official debut at the 2008 Greater Los Angeles Auto Show."
+    },
+    {
+        "id": "9",
+        "logoUrl": "https://w7.pngwing.com/pngs/409/855/png-transparent-mercedes-logo-logo-mercedes-benz-logo-vector-diagram.png",
+        "imageName": "Mercedes1",
+        "modelName": "Mercedes Benz SL",
+        "price": "80,000",
+        "details": "The Mercedes-Benz SL is a grand touring sports car manufactured by Mercedes since 1954. The designation SL derives from the German 'Sport Leicht' or 'Sport Lightweight'."
+    },
+    {
+        "id": "10",
+        "logoUrl": "https://banner2.cleanpng.com/20180516/hiq/kisspng-jaguar-cars-jaguar-e-type-jaguar-xj-cars-logo-5afcc8a2043140.6132078215265158740172.jpg",
+        "imageName": "Jaguar1",
+        "modelName": "Jaguar F-Type",
+        "price": "75,000",
+        "details": "The Jaguar F-Type is a series of two-door, two-seater grand tourers manufactured by British luxury car manufacturer Jaguar Land Rover under their Jaguar Cars marque since 2013."
+    }
+]
