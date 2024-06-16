@@ -16,26 +16,24 @@ struct CardDetailView<LogoView: View>: View {
     let horsePower: Int
     let numberOfSpeeds: Int
     let baggageVolume: Int
-    let card: Card // Add the Card object
+    let card: Card
 
     @State private var currentImageIndex: Int = 0
     @State private var isExpanded: Bool = false
-    @State private var navigateToExplore: Bool = false // State variable to control navigation
+    @State private var navigateToExplore: Bool = false
     private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
 
-    let images = [
-        Image("Mazda1"),
-        Image("Mazda2"),
-        Image("Mazda3"),
-        Image("Mazda4")
-    ]
+    var images: [Image] {
+        let baseName = card.modelName.components(separatedBy: " ").first ?? "Image"
+        return (1...4).map { Image("\(baseName)\($0)") }
+    }
 
     var body: some View {
         VStack {
             ScrollView {
                 HStack {
                     Button(action: {
-                        navigateToExplore = true // Set the state variable to true to trigger navigation
+                        navigateToExplore = true
                     }) {
                         Image(systemName: "arrow.left")
                             .font(.system(size: 25))
@@ -71,7 +69,7 @@ struct CardDetailView<LogoView: View>: View {
                         .font(.title)
                         .fontWeight(.bold)
                     Spacer()
-                    LikeButtonView(width: 30, height: 30, card: card) // Pass the card object here
+                    LikeButtonView(width: 30, height: 30, card: card)
                 }
                 .padding([.horizontal, .top])
                 .padding(.trailing, 10)
@@ -168,7 +166,7 @@ struct CardDetailView<LogoView: View>: View {
         .background(Color(hex: "#f3f3f3"))
         .navigationBarHidden(true)
         .background(
-            NavigationLink(destination: ExploreView().navigationBarHidden(true), isActive: $navigateToExplore) { EmptyView() } // NavigationLink to ExploreView
+            NavigationLink(destination: ExploreView().navigationBarHidden(true), isActive: $navigateToExplore) { EmptyView() }
         )
     }
     
@@ -199,7 +197,7 @@ The Mazda MX-5 is a lightweight two-passenger roadster manufactured and marketed
             card: Card(
                 id: "1",
                 logoUrl: "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png",
-                imageName: "https://i.pinimg.com/originals/5d/45/15/5d4515bc04668518ac28000947d0e3bc.png",
+                imageName: "Mazda1",
                 modelName: "Mazda MX-5",
                 price: "40,000",
                 details: """

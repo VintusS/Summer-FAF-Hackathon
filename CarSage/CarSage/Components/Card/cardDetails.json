@@ -18,7 +18,7 @@
     {
         "id": "3",
         "logoUrl": "https://brandslogos.com/wp-content/uploads/images/large/mustang-logo.png",
-        "imageName": "Mazda1",
+        "imageName": "Ford1",
         "modelName": "Ford Mustang",
         "price": "55,000",
         "details": "The Ford Mustang is an American car manufactured by Ford. It was originally conceived by Lee Iacocca. The Mustang created the 'pony car' class of American muscle cars."
@@ -26,7 +26,7 @@
     {
         "id": "4",
         "logoUrl": "https://cdn.freebiesupply.com/logos/large/2x/chevrolet-logo-png-transparent.png",
-        "imageName": "Mazda1",
+        "imageName": "Chevrolet1",
         "modelName": "Chevrolet Camaro",
         "price": "45,000",
         "details": "The Chevrolet Camaro is a mid-size American automobile manufactured by Chevrolet, classified as a pony car and some versions also as a muscle car."

@@ -9,7 +9,20 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ZStack {
+                ScrollView {
+                    SurveyView(
+                        question: "What are your favorite colors?",
+                        answers: ["Red", "Blue", "Green", "Yellow"],
+                        multipleChoice: true,
+                        isLast: false
+                    )
+                }
+                .background(Color(hex: "#f3f3f3"))
+            }
+            .background(Color(hex: "#f3f3f3"))
+        }
     }
 }
 

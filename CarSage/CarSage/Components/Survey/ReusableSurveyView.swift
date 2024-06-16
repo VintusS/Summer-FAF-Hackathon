@@ -12,10 +12,26 @@ struct SurveyView: View {
     let answers: [String]
     let multipleChoice: Bool
     let isLast: Bool
+    @State private var navigateToExplore: Bool = false
     @State private var selectedAnswers: [String: Bool] = [:]
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
+            HStack {
+                Button(action: {
+                    navigateToExplore = true
+                }) {
+                    Image(systemName: "arrow.left")
+                        .font(.system(size: 25))
+                        .foregroundColor(.black)
+                        .padding(8)
+                        .frame(width: 50, height: 50)
+                        .background(Color.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .shadow(color: .gray, radius: 4, x: 0, y: 2)
+                }
+            }
+            .padding(.horizontal, 20)
             Text(question)
                 .font(.custom("GTWalsheimTrial-Bd", size: 20))
                 .foregroundColor(.black)
@@ -69,8 +85,11 @@ struct SurveyView: View {
             .padding(.bottom, 40)
         }
         .padding(.top, 70)
-        .background(Color.white)
+        .background(Color(hex: "#f3f3f3"))
         .edgesIgnoringSafeArea(.all)
+        .background(
+            NavigationLink(destination: ExploreView().navigationBarHidden(true), isActive: $navigateToExplore) { EmptyView() }
+        )
     }
 
     private func toggleSelection(for answer: String) {
